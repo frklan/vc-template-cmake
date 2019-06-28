@@ -1,7 +1,7 @@
-#include <iostream>
-
-#include "version.h"
 #include "vct/vct.h"
+#include "version.h"
+
+#include <iostream>
 
 int main() {
   std::clog << "--- vc-template-cmake ---\n";
