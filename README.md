@@ -40,4 +40,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the CC BY-NC-SA License - see the [LICENSE](LICENSE) file for details. 
+
+Up to and including commit 3d76842891311857fc6a5ca2bab47be23a79a830 this project was licensed under the MIT Licens.
