@@ -1,4 +1,5 @@
 -Wno-pragma-once-outside-header
+-Wno-modernize-use-trailing-return-type
 -std=c++17
 -isysroot/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 -I/usr/local/include/ 

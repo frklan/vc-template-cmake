@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
 
 project(vct)
 set (CMAKE_CXX_STANDARD 17)
@@ -7,7 +7,7 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_CLANG_TIDY 
   clang-tidy;
   -header-filter="*.h";
-  -checks=*,-fuchsia-default-arguments;)
+  -checks=*,-fuchsia-default-arguments,-modernize-use-trailing-return-type;)
   
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 
