@@ -11,6 +11,8 @@ set(CMAKE_CXX_CLANG_TIDY
   
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_compile_options(
   -Weverything 
   -Wno-c++98-compat 
