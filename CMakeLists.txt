@@ -7,7 +7,7 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_CLANG_TIDY 
   clang-tidy;
   -header-filter="*.h";
-  -checks=*,-fuchsia-default-arguments,-modernize-use-trailing-return-type;)
+  -checks=*,-fuchsia-*,-modernize-use-trailing-return-type;)
   
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 
@@ -21,5 +21,6 @@ add_compile_options(
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+add_subdirectory(lib)
 add_subdirectory(src bin)
 add_subdirectory(test)

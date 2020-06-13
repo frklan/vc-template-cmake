@@ -6,11 +6,12 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(vct)
 
-add_custom_command(
-  OUTPUT  ${CMAKE_CURRENT_BINARY_DIR}/version.cpp
-  COMMAND ${CMAKE_SOURCE_DIR}/makeversion.sh -o ${CMAKE_CURRENT_BINARY_DIR}/version.cpp
-)
+#add_custom_command(
+#  OUTPUT  ${CMAKE_CURRENT_BINARY_DIR}/version.cpp
+#  COMMAND ${CMAKE_SOURCE_DIR}/makeversion.sh -o ${CMAKE_CURRENT_BINARY_DIR}/version.cpp
+#)
 
 # The main program
-add_executable(${PROJECT_NAME} main.cpp ${CMAKE_CURRENT_BINARY_DIR}/version.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE vct_lib)
+target_link_libraries(${PROJECT_NAME} PRIVATE libversion)
