@@ -6,7 +6,7 @@
     {
       "label": "Build project",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/build/ && make clean && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON .. && make",
+      "command": "cd ${workspaceFolder}/build/ && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_VERBOSE_MAKEFILE:BOOL=ÒFF .. && make",
       "group": {
         "kind": "build",
         "isDefault": true
